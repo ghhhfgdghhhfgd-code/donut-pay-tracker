@@ -1,13 +1,7 @@
 pluginManagement {
-	repositories {
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-		mavenCentral()
-		gradlePluginPortal()
-	}
+    repositories {
+        maven { url = 'https://maven.fabricmc.net/' }
+        gradlePluginPortal()
+    }
 }
-
-// Should match your modid
-rootProject.name = 'modid'
+rootProject.name = 'donut-pay-tracker'
