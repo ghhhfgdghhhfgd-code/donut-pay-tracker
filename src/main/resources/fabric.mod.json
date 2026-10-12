@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Donut Pay Tracker",
   "description": "Client-side overlay that tracks /pay payments you receive on DonutSMP.",
-  "authors": ["You"],
+  "authors": ["YourNameHere"],
   "environment": "client",
   "entrypoints": {
     "client": ["com.venice.donutpay.DonutPayMod"]
