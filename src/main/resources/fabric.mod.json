@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "donutpay",
   "version": "${version}",
-  "name": "test action mod",
+  "name": "test auction mod",
   "description": "Client-side overlay that tracks /pay payments you receive on DonutSMP.",
   "authors": ["YourNameHere"],
   "environment": "client",
