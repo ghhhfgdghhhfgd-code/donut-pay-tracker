@@ -28,15 +28,15 @@ public class DonutPayMod implements ClientModInitializer {
     static final Deque<Payment> recent = new ArrayDeque<>();
     static double grandTotal = 0;
     static boolean overlayVisible = true;
-    static KeyBinding toggleKey, resetKey;
-
-    static final String NAME = "(?<name>[A-Za-z0-9_]{2,16})";
-    static final String AMT  = "\\$?(?<amount>[0-9][0-9,]*(?:\\.[0-9]+)?)";
     static final List<Pattern> PATTERNS = List.of(
-        Pattern.compile(NAME + " has paid you \\" + AMT),
-        Pattern.compile(NAME + " paid you \\" + AMT),
-        Pattern.compile(NAME + " has sent you \\" + AMT),
-        Pattern.compile(NAME + " sent you \\" + AMT),
+        Pattern.compile(NAME + " has paid you " + AMT),
+        Pattern.compile(NAME + " paid you " + AMT),
+        Pattern.compile(NAME + " has sent you " + AMT),
+        Pattern.compile(NAME + " sent you " + AMT),
+        Pattern.compile(NAME + " gave you " + AMT),
+        Pattern.compile("You received " + AMT + " from " + NAME),
+        Pattern.compile("You have received " + AMT + " from " + NAME)
+    );
         Pattern.compile(NAME + " gave you \\" + AMT),
         Pattern.compile("You received \\" + AMT + " from " + NAME),
         Pattern.compile("You have received \\" + AMT + " from " + NAME)
